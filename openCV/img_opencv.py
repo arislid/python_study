@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 #트랙바 조정 함수
 def on_trackbar(x):
     pass
@@ -16,7 +16,8 @@ cv2.setTrackbarPos('low threshold', 'Canny', 50)
 cv2.setTrackbarPos('high threshold', 'Canny', 150)
 
 #gray scale 이미지 불러오기
-img_gray = cv2.imread('JPG/laptop.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('laptop.jpg', cv2.IMREAD_COLOR)
+img_gray = cv2.imread('laptop.jpg', cv2.IMREAD_GRAYSCALE)
 img_gray1 = cv2.resize(img_gray, dsize=(800, 640), interpolation=cv2.INTER_AREA)
 
 #트랙바가 조정시 canny함수에 반영되도록 조정
