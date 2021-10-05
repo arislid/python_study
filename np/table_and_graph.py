@@ -27,9 +27,17 @@ class GetGraph(GetTable): # Overiding from GetTable
         print("GetGraph Class...\n")
         
     def settingData(self):
-        self.dataSet = super().settingData()
+        self.dataSet = super().dataSet
         
         return self.dataSet
+    # I wanted to show graph after inserting data, 
+    # get table through pandas, and get inheritane...!
+    def showGraph(self):
+        plt.plot()
+        '''
+        fill this statement~
+        '''
+        
     
 # Let's think how to fill class  
 # I want to set tables n x 2 or n x 3 or n x 4 ....
