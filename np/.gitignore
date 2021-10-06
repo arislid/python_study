@@ -4,3 +4,6 @@ Include/
 Lib/
 Scripts/
 *.cfg
+
+share/
+*.exe

@@ -27,15 +27,20 @@ class GetGraph(GetTable): # Overiding from GetTable
         print("GetGraph Class...\n")
         
     def settingData(self):
-        self.dataSet = super().dataSet
-        
-        return self.dataSet
+        return super().settingData()
+    
+    def settingTable(self):
+        return super().showTable()
     # I wanted to show graph after inserting data, 
     # get table through pandas, and get inheritane...!
     def showGraph(self):
-        plt.plot()
+        self.df = self.settingTable()
+        self.df.plot(kind='line', x='input', y='output')
+        plt.show()
+        
         '''
-        fill this statement~
+        Let's consider how to set the float value(decimal point ............)
+        (2021.10.07)
         '''
         
     
@@ -45,18 +50,20 @@ class GetGraph(GetTable): # Overiding from GetTable
 
     
 if __name__ == "__main__":
-    gt = GetTable()
-    dataList = gt.settingData()
-    dataTable = gt.showTable()
+    # gt = GetTable()
+    # dataList = gt.settingData()
+    # dataTable = gt.showTable()
     
     gg = GetGraph()
     dataGraph = gg.settingData()
+    dataTable = gg.settingTable()
+    gg.showGraph()
     
     print(f"<dataTable>\n{dataTable}")
     print(f"print input datas....\n{dataTable['input']}")
     
     print(f"<dataGraph>\n{dataGraph}")
-    # print(f"print input datas....\n{dataGraph['input']}")
+    print(f"print input datas....\n{dataGraph[0]}")
     
     
     
