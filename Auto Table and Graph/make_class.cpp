@@ -37,5 +37,5 @@ int main(void)
     Hello h;
 
     h.printHello();
-    printf("count number of printHello.... %d\n", h.countHello());
+    cout << "count number of printHello.... "<< h.countHello() << endl;
 }
