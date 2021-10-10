@@ -1,11 +1,14 @@
 
-# Auto plot tables and graph project
+# Auto plot tables and graph project  
 
-Let's consider how to expand this "toy" project.
+## 2010-10-07 
+ * Finished auto-process; insert_data -> make graph and table  
 
-1. Make QT GUI program
-2. Make Android app...
-3. Upload Web.  
+## 2010-10-10
+ * Install django framework
+ * Upload Web on local server  
 
-
-Of course, I want both, but I have to chose 1 thing for the next toy project... ROS Robot...!
+------
+## Issues
+1. Encoding change: How to show UTF-08 and EUC-KR codes..
+2. The next step: How to make data-in and out-insert console(?)
