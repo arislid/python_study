@@ -7,3 +7,5 @@ Scripts/
 
 share/
 *.exe
+
+secrets.json
