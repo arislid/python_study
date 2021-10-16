@@ -1,4 +1,3 @@
-# %%
 from urllib.parse import urlencode, unquote
 import requests
 import json
@@ -39,4 +38,4 @@ for item in r_list:
 #print(result)
 #print("===== response dictionary(python object) end =====")
 #print()
-# %%
+

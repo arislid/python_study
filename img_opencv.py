@@ -55,6 +55,3 @@ cv2.imshow('color star', dst)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 '''
-# %%
-
- # %%
